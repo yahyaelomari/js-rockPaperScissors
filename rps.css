@@ -1,0 +1,60 @@
+#Title{display: flex;
+justify-content: center;
+color: darkcyan;}
+
+body{
+    background-color: rgb(25 25 25);
+    color: white;
+    font-family: "DejaVu Sans";
+
+}
+h4{
+  display: flex;
+justify-content: center;
+font-family: "DejaVu Sans";
+    color: darkgoldenrod;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resetScoreBtn {
+  background-color: darkcyan;
+  border: none;
+  color: black;
+  padding: 20px 20px;
+  text-align: center;
+  font-size: large;
+  border-radius: 100%;
+  border: 2px solid darkgoldenrod;
+}
+
+
+
+.moveBtn{
+  cursor: pointer;
+  padding: 20px 20px;
+  border-radius: 50px;
+  border: 2px solid darkgoldenrod;
+
+   background-color: transparent;
+}
+
+.rpsImg{
+
+    height: 50px;
+    width: 50px;
+background-color: transparent;
+
+
+}
+

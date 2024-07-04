@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>miniGame</title>
+    <script > </script>
+    <link  rel="stylesheet" href="rps.css">
+</head>
+<body>
+
+<h2 id="Title">Rock Paper Scissors</h2>
+
+<h4>Pick a move</h4>
+
+<div class="btnContainer">
+    <button class="rockBtn moveBtn" onclick="
+        myMove='Rock';
+        pickCompMove();
+        resultGeneration('Scissors','Paper');
+    "> <img class="rpsImg" src="rpsImages/Rock.png" alt="Rock"> </button>
+
+    <button class="paperBtn moveBtn" onclick="
+        myMove='Paper';
+        pickCompMove();
+        resultGeneration('Rock','Scissors');
+     "> <img class="rpsImg" src="rpsImages/Paper.png" alt="Paper"> </button>
+
+    <button class="scissorsBtn moveBtn" onclick="
+        myMove='Scissors';
+        pickCompMove();
+        resultGeneration('Paper','Rock');
+     "> <img class="rpsImg" src="rpsImages/Scissors.png" alt="Scissors"> </button>
+
+</div>
+
+<div class="score">
+<p class="js-resultPopUp"></p>
+<p class="js-score"></p>
+</div>
+
+<div class="btnContainer">
+    <button class="resetScoreBtn" onclick="resetScore()">Reset score</button>
+</div>
+
+<script src="rps.js"></script>
+</body>
+</html>
