@@ -15,6 +15,11 @@ font-family: "DejaVu Sans";
     color: darkgoldenrod;
 }
 
+.autoModeStatus{
+    display: flex;
+    justify-content: center;
+}
+
 .score{
     display: flex;
     flex-direction: column;
@@ -27,7 +32,7 @@ font-family: "DejaVu Sans";
     justify-content: space-evenly;
 }
 
-.resetScoreBtn {
+.resetScoreBtn,.autoPlayBtn {
   background-color: darkcyan;
   border: none;
   color: black;
@@ -36,9 +41,12 @@ font-family: "DejaVu Sans";
   font-size: large;
   border-radius: 100%;
   border: 2px solid darkgoldenrod;
+    cursor: pointer;
 }
 
-
+.overAllResult{display :flex;
+    flex-direction: column;
+align-items: center}
 
 .moveBtn{
   cursor: pointer;
