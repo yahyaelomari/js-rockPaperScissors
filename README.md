@@ -6,4 +6,5 @@
  The score is display using the DOM. 
  The result gets saved in the LocalStorage so that refreshing the page changes nothing. 
  A reset button is used to reset the score. 
+ An auto play mode with my personnal strategy for this game
  Good luck and have fun.
