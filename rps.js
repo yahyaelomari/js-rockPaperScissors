@@ -33,7 +33,6 @@
             jsResultElem.innerHTML=`<div class="overAllResult"> <p>You <img class="rpsImg" src="rpsImages/${myMove}.png"> <img class="rpsImg" src="rpsImages/${computerMove}.png"> Computer  <div class="js-result">{tie}</div> </p> </div>`;
 
             updateScoreElement()
-            return myMove;
         }
         if(computerMove === moveToWin)
         {
@@ -41,7 +40,6 @@
             jsResultElem.innerHTML=`<div class="overAllResult"> <p>You <img class="rpsImg" src="rpsImages/${myMove}.png"> <img class="rpsImg" src="rpsImages/${computerMove}.png"> Computer <div class="js-result">{you win}</div> </p> </div>`;
 
             updateScoreElement()
-            return myMove;
 
         }
         if(computerMove === moveToLose)
@@ -50,10 +48,11 @@
             jsResultElem.innerHTML=`<div class="overAllResult"> <p>You <img class="rpsImg" src="rpsImages/${myMove}.png"> <img class="rpsImg" src="rpsImages/${computerMove}.png"> Computer <div class="js-result">{you lose}</div> </p> </div>`;
 
             updateScoreElement()
-            return myMove;
 
         }
         localStorage.setItem('scoreKey', JSON.stringify(score))//takes JSON version of score and puts it in localStorage to keep score even after refresh
+        return myMove;
+
     }
 
     function showScore() {
